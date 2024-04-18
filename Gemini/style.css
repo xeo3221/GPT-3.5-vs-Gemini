@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+#oplaty-lista ul {
+  list-style: none;
+  padding: 0;
+}
+
+#oplaty-lista li {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#oplata-dodaj,
+#oplata-edytuj {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

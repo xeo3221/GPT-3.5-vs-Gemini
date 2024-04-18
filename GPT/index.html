@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zarządzanie opłatami</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Zarządzanie opłatami</h1>
+
+    <form id="oplaty-form">
+      <input type="text" id="nazwa" placeholder="Nazwa opłaty" required />
+      <input type="number" id="kwota" placeholder="Kwota" required />
+      <select id="typ">
+        <option value="cykliczna">Cykliczna</option>
+        <option value="pojedyncza">Pojedyncza</option>
+      </select>
+      <input type="submit" value="Dodaj opłatę" />
+    </form>
+
+    <table id="oplaty-table">
+      <thead>
+        <tr>
+          <th>Nazwa</th>
+          <th>Kwota</th>
+          <th>Typ</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Tutaj będą dodawane dynamicznie opłaty -->
+      </tbody>
+    </table>
+
+    <div id="powiadomienie" class="powiadomienie"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zarządzanie opłatami</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Zarządzanie opłatami</h1>
+
+    <div id="oplaty-lista">
+      <h2>Lista opłat</h2>
+      <ul></ul>
+    </div>
+
+    <div id="oplata-dodaj">
+      <h2>Dodaj nową opłatę</h2>
+      <form id="formularz-dodawania">
+        <label for="nazwa">Nazwa:</label>
+        <input type="text" id="nazwa" name="nazwa" required />
+
+        <label for="kwota">Kwota:</label>
+        <input type="number" id="kwota" name="kwota" required />
+
+        <label for="typ">Typ:</label>
+        <select id="typ" name="typ" required>
+          <option value="cykliczna">Cykliczna</option>
+          <option value="pojedyncza">Pojedyncza</option>
+        </select>
+
+        <label for="okres">Okres (dla opłat cyklicznych):</label>
+        <select id="okres" name="okres">
+          <option value="miesiac">Miesiąc</option>
+          <option value="tydzień">Tydzień</option>
+        </select>
+
+        <button type="submit">Dodaj</button>
+      </form>
+    </div>
+
+    <div id="oplata-edytuj">
+      <h2>Edytuj opłatę</h2>
+      <form id="formularz-edycji">
+        <input type="hidden" id="id" name="id" />
+
+        <label for="nazwa">Nazwa:</label>
+        <input type="text" id="nazwa" name="nazwa" required />
+
+        <label for="kwota">Kwota:</label>
+        <input type="number" id="kwota" name="kwota" required />
+
+        <label for="typ">Typ:</label>
+        <select id="typ" name="typ" required>
+          <option value="cykliczna">Cykliczna</option>
+          <option value="pojedyncza">Pojedyncza</option>
+        </select>
+
+        <label for="okres">Okres (dla opłat cyklicznych):</label>
+        <select id="okres" name="okres">
+          <option value="miesiac">Miesiąc</option>
+          <option value="tydzień">Tydzień</option>
+        </select>
+
+        <button type="submit">Zapisz</button>
+        <button type="button" onclick="zamknijFormularzEdycji()">Anuluj</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
